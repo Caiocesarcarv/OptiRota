@@ -213,7 +213,7 @@ if __name__ == "__main__":
     print(f"Grafo carregado: {grafo.number_of_nodes()} nos, {grafo.number_of_edges()} arestas")
     
     # 2. Executar análise (usando max_pontos=10 para teste rápido - remover para análise completa)
-    resultados = executar_dijkstra_todos_pontos(grafo, algoritmo='dijkstra', max_pontos=10)
+    resultados = executar_dijkstra_todos_pontos(grafo, algoritmo='dijkstra', max_pontos=int(input("Quantos pontos será analisados?\n-> ")))
     
     # 3. Encontrar melhor ponto
     melhor_ponto, menor_distancia, ranking = encontrar_melhor_ponto(resultados)
